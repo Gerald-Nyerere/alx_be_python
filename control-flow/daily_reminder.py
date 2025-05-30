@@ -15,5 +15,5 @@ match priority:
 if time_bound == "yes":
     reminder += " This is a time-sensitive task that requires immediate attention today!"
 
-print("\nReminder:")
+print("Reminder:")
 print(reminder)
