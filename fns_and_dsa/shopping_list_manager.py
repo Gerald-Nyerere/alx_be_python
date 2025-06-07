@@ -13,7 +13,7 @@ def main():
 
         if choice == '1':
             # Prompt for and add an item
-            item = input("Enter the item yo add:L ").strip()
+            item = input("Enter the item to add: ").strip()
             shopping_list.append(item)
             print(f"'{item}' has been added to the list.")
             
@@ -42,3 +42,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
