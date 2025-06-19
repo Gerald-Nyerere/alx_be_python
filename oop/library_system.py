@@ -6,6 +6,8 @@ class Book:
     def get_details(self):
         return f'{self.title} by {self.author}'
     
+    def __str__(self):
+        return self.get_details()
 class EBook(Book):
     def __init__(self, title, author, file_size:int):
         super().__init__(title, author)
@@ -38,5 +40,3 @@ class Library:
             for book in self.books:
                 print(book.get_details())
         
-    def __str__(self):
-        return self.get_details()
