@@ -37,3 +37,6 @@ class Library:
         else:
             for book in self.books:
                 print(book.get_details())
+        
+    def __str__(self):
+        return self.get_details()
