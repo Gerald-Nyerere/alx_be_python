@@ -26,3 +26,18 @@ class PrintBook(Book):
 
     def get_details(self):
         return f'PrintBook: {self.title} by {self.author}, Page Count: {self.page_count}'
+
+class Library:
+    def __init__(self):
+        self.books = []
+
+    def add_book(self, book:Book):
+        self.books.append(book) 
+    
+    def list_books(self, ):
+        if not self.books:
+             print("No books in the library.")
+        else:
+            for book in self.books:
+                print(book.get_details())
+        
